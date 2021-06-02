@@ -16,3 +16,12 @@ def solution(participant, completion):
   #정확성: 50.0
   #효율성: 10.0
   #합계: 60.0 / 100.0
+
+import collections
+def solution(participant, completion):
+    answer = ''
+    ct1 = collections.Counter(participant)
+    ct2 = collections.Counter(completion)
+    return list(ct1 - ct2)[o]
+
+#collection 패키지를 이용하니 금세 풀렸다.
